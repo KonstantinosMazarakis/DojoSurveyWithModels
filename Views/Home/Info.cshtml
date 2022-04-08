@@ -1,0 +1,25 @@
+
+    @model User
+    
+    <div class="container box mt-3">
+        <h1 class="text-center">Submitted Info</h1>
+        <div class="d-flex flx mb-2">
+            <label style="flex: 1;">Your Name: </label>
+            <p style="flex: 1;">@Model.Name</p>
+        </div>
+        <div class="d-flex flx mb-2">
+            <label style="flex: 1;">Dojo Location: </label>
+            <p style="flex: 1;">@Model.Location</p>
+        </div>
+        <div class="d-flex flx mb-2">
+            <label style="flex: 1;">Fevorite Language: </label>
+            <p style="flex: 1;">@Model.Language</p>
+        </div>
+        <div class="d-flex flx mb-2">
+            <label style="flex: 1;">Comment: </label>
+            <p style="flex: 1;">@Model.Comment</p>
+        </div>
+        <div class="d-flex flx-2 mt-3">
+            <a href="/" class="btn btn-info">Go Back</a>
+        </div>
+    </div>
