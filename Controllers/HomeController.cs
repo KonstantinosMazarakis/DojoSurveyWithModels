@@ -26,7 +26,13 @@ namespace DojoSurveyWithModels.Controllers
         [HttpPost("postForm")]
         public IActionResult postForm(User newUser)
         {
+            if(ModelState.IsValid)
+            {
             return View("Info", newUser);
+            }else
+            {
+                return View("Index");
+            }
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
